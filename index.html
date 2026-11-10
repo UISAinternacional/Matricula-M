@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isabel Cristina Luján Mendoza</title>
+
+    <!-- Etiquetas Open Graph mejoradas para vista previa en redes sociales -->
+    <meta property="og:title" content="Isabel Cristina Luján Mendoza" />
+    <meta property="og:description" content="Psicóloga clínica con 15 años de trayectoria Y Especialista en Psicología Holística" />
+    <meta property="og:image" content="https://i.ibb.co/ynGbKbcZ/Psicolog-a-Hol-stica-Cuerpo-y-Esp-ritu.png" />
+    <meta property="og:image:type" content="https://i.ibb.co/ynGbKbcZ/Psicolog-a-Hol-stica-Cuerpo-y-Esp-ritu.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://uisainternacional.github.io/Matricula-M/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Unidad Internacional del Saber y Asociados" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="La OMS inaugura un Centro Mundial de Medicina Tradicional" />
+    <meta name="twitter:description" content="Cerca del 80% de la población mundial utiliza medicina tradicional. Conocé los desafíos y avances en esta investigación impulsada por la OMS." />
+    <meta name="twitter:image" content="https://i.ibb.co/ynGbKbcZ/Psicolog-a-Hol-stica-Cuerpo-y-Esp-ritu.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        /* Animación para la aparición de los elementos */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px); /* Desplazamiento suave hacia arriba */
+            transition: opacity 1.5s ease, transform 1.5s ease; /* Transición más suave */
+        }
+
+        /* Cuando los elementos se cargan */
+        body.loaded .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #444;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .header img {
+            height: 40px; /* Ajustado tamaño del logo */
+            width: 40px;  /* Ajustado tamaño del logo */
+            border-radius: 10px;
+            border: 2px solid #000000;
+            margin-right: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición en el logo */
+        }
+        .header img:hover {
+            transform: scale(1.2); /* Efecto de zoom más grande al pasar sobre el logo */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .header h1 {
+            font-size: 1.6em; /* Tamaño de fuente ajustado */
+            margin: 0;
+            font-family: 'Arial', sans-serif; /* Fuente Arial */
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: capitalize; /* Primeras letras en mayúsculas */
+            transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease; /* Transición suave */
+        }
+        .header:hover h1 {
+            transform: translateY(-5px); /* Desplazamiento suave hacia arriba */
+            letter-spacing: 2px; /* Aumento del espaciado de letras */
+        }
+        .header:hover {
+            background-color: #333333; /* Cambio de fondo del encabezado */
+            transform: translateY(-5px); /* Desplazamiento hacia arriba del encabezado */
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            text-align: center;
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+        }
+        .profile-image {
+            width: 200px;
+            height: 300px;
+            border-radius: 12px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+        }
+        h1 {
+            color: #f4f4f4;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            transition: color 0.3s ease;
+        }
+        p {
+            line-height: 1.8;
+            color: #b0b0b0;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social-links a {
+            display: inline-block;
+            width: 40px; /* Ajustado el tamaño del icono */
+            height: 40px; /* Ajustado el tamaño del icono */
+            text-decoration: none;
+            color: #ffffff;
+            border-radius: 50%; /* Mantener el borde redondeado */
+            background-color: #ffffff; /* Fondo blanco */
+            border: 2px solid #ffffff; /* Borde blanco */
+            background-size: cover;
+            box-shadow: none; /* Sin sombra */
+            transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .social-links a:nth-child(1) {
+            background-image: url('https://i.ibb.co/RHhT8Wv/171.png'); /* Reemplazar con el logo de Facebook */
+            border-color: #1424b1; /* Color de borde para Facebook */
+        }
+        .social-links a:nth-child(2) {
+            background-image: url('https://i.ibb.co/XYPLSrS/18.png'); /* Reemplazar con el logo de Instagram */
+            border-color: #d6249f; /* Color de borde para Instagram */
+        }
+        .social-links a:nth-child(3) {
+            background-image: url('https://i.ibb.co/X3Ggb7j/19.jpg'); /* Reemplazar con el logo de WhatsApp */
+            border-color: #25d366; /* Color de borde para WhatsApp */
+        }
+        .social-links a:nth-child(4) {
+            background-image: url('https://i.ibb.co/VJ7Bh3m/gmail-icon-free-png.webp'); /* Reemplazar con el logo de Gmail */
+            border-color: #ffffff; /* Borde blanco para Gmail */
+        }
+        .social-links a:hover {
+            transform: scale(1.1);
+            background-color: #f4f4f4; /* Fondo más claro al pasar el mouse */
+        }
+        .additional-info {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #292929;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .additional-info:hover {
+            background-color: #343434;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+        }
+        .additional-info img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .additional-info img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+        }
+        .additional-info p {
+            font-size: 1.1em;
+            color: #c0c0c0;
+            line-height: 1.6;
+            transition: color 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            .profile-image {
+                width: 150px;
+                height: 225px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .additional-info img {
+                max-width: 100%;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="loaded">
+    <div class="header fade-in">
+        <img src="https://i.ibb.co/yN93Dk7/Dise-o-sin-t-tulo-6.jpg" alt="Logo">
+        <h1>Unidad Internacional del Saber y Asociados®</h1>
+    </div>
+    <div class="container fade-in">
+        <img src="https://i.ibb.co/X1N8zwL/Retrato-natural-con-fondo-de-madera.png" alt="Foto de perfil" class="profile-image">
+        <h1>Isabel Cristina Luján Mendoza</h1>
+        <p>
+         
+           Psicóloga clínica con 15 años de trayectoria Y Especialista en Psicología Holística 
+            <P>Provincia de Buenos Aires. Argentina </p>
+            <p>Número de Matricula/Membresía: 65484494-11</p>
+            <p>Intitución formadora: Asociación de Formación Holística Andina®</p>
+       
+
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/andinaformaciones/" title="Facebook"></a>
+            <a href="https://www.instagram.com/andinaformaciones/" title="Instagram"></a>
+              <a href="https://wa.me/5491132335534" title="WhatsApp"></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=crikcrikmz@gmail.com&su=Consulta&body=Hola,%20me%20gustaría%20saber%20más%20información%20sobre%20la%20disponibilidad%20para%20consultas." title="Gmail"></a>
+        </div>
+        <div class="additional-info fade-in">
+            <img src="https://i.ibb.co/HfRDPHHm/Especialista-en-Psicolog-a-Hol-stica-e-Hipnosis-Cl-nica-Avanzada-1.jpg/800x600" alt="Imagen adicional">
+            <p>ESPECIALISTA EN PSICOLOGÍA HOLÍSTICA</p>
+            <p>Mi Nombre: Isabel Cristina Luján Mendoza</p>
+            <p>1. 👤 Descripción de su perfil profesional
+
+
+Psicóloga clínica con 15 años de trayectoria, especializada en Psicología Analítica de Carl Jung,
+ dedicada a acompañar a las personas en su proceso de individución, sanación y autodescubrimiento.
+  Mi enfoque terapéutico se sostiene bajo la profunda premisa junguiana: "Lo no resuelto regresa
+   en forma de destino". A través del análisis del inconsciente, el trabajo con los arquetipos,
+    la sombra y el sistema familiar, facilito un espacio seguro y compasivo donde mis consultantes
+     pueden comprender el sentido de sus crisis, integrar sus polaridades y reconectarse con su
+      verdadero Ser.</p>
+        <img src="https://i.ibb.co/ynGbKbcZ/Psicolog-a-Hol-stica-Cuerpo-y-Esp-ritu.png/1800x1300" alt="Imagen adicional">
+     <p>🌿2. Experiencia en terapias holísticas
+
+Entiendo al ser humano como una unidad integral (mente, cuerpo, espíritu y linaje), por lo que a lo largo de mis 15 años de práctica he incorporado disciplinas sutiles y sistémicas con aval institucional:
+* Constelaciones Familiares: Enfoque sistémico para identificar y sanar lealtades invisibles, dinámicas transgeneracionales y bloqueos heredados del árbol familiar.
+* Reiki: Canalización y terapia energética orientada a armonizar, liberar bloqueos emocionales y acompañar los procesos psicosomáticos desde el plano sutil.
+* Rituales Energéticos: Diseño de actos simbólicos y psicomágicos que le permiten a la psique procesar cierres de ciclos, duelos y aperturas de nuevos caminos.
+* Certificaciones: Formaciones y especializaciones en disciplinas holísticas realizadas a través de Andina.</p>
+
+                
+
+     <p>3. 📈 Trayectoria y experiencia adicional
+
+
+* Operadora Socio Terapéutica en Adicciones (Red Educativa 21): Diplomada en la intervención, contención y abordaje integral de consumos problemáticos y salud mental. Mi enfoque combina la rigurosidad socio-comunitaria con la psicología profunda, guiando los procesos bajo el lema diario y resiliente de "Solo por hoy".
+* 15 años de práctica clínica, liderando procesos de transformación en adultos frente a crisis vitales, ansiedad, duelos, traumas y búsqueda de propósito.
+* Facilitadora de espacios terapéuticos grupales orientados a la sanación del árbol genealógico, talleres de expresión arquetípica y el trabajo con la sombra.</p> 
+       
+
+ <img src="https://i.ibb.co/N2WqK9Ft/Collage-de-bienestar-terap-utico-y-espiritual.png/1800x1300" alt="Imagen adicional">
+
+ <p>4. ✨ Anécdotas o experiencias personales
+
+
+Mi camino hacia la psicología profunda y el abordaje holístico nació de comprender que la mente
+ humana no puede sanar de forma aislada: necesita integrar su espíritu, su historia familiar y su 
+ entorno social. A lo largo de estos 15 años —tanto en el sensible trabajo con las adicciones en 
+ territorio como en el espacio sagrado del consultorio—, he comprobado que el dolor más profundo
+  esconde la semilla de la mayor transformación. Ver a un consultante reconciliarse con su historia
+   transgeneracional, liberar una carga energética o recuperar el timón de su vida un día a la
+    vez, es la confirmación diaria de que el alma siempre busca el camino de regreso a la
+     totalidad.</p>
+      
+       <img src="https://i.ibb.co/Y7gJL1W0/psicolog-a-hol-stica-pdf.png" alt="Imagen adicional">
+      
+       
+            
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+<div style="text-align:center; margin:20px 0;">
+
+    <a href="https://drive.google.com/uc?export=download&amp;id=1VnD2vhkRrN1mXpQAWkqd3aU" target="_blank" download="" style="display: inline-block; padding: 14px 28px; background: rgb(13, 110, 253); color: white; text-decoration: none; border-radius: 10px; font-family: Arial, sans-serif; font-weight: bold; transition: 0.3s;" onmouseover="this.style.background=&#39;#084298&#39;" onmouseout="this.style.background=&#39;#0d6efd&#39;">
+       📄 Perfil Profesional de Isabel Cristina Luján Mendoza PDF
+    </a>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+        
+           
+            
+            
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Imagen a través de un enlace con animación</title>
+            <style>
+            /* Estilos para la animación al pasar el mouse */
+            a.image-container {
+              display: inline-block;
+              overflow: hidden;
+              position: relative;
+              perspective: 1000px; /* Para aplicar efectos 3D */
+            }
+            
+            a.image-container img {
+              display: block;
+              overflow: hidden;
+              border-radius: 10px;
+              transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+            }
+            
+            a.image-container:hover img {
+              transform: scale(1.05) rotateY(5deg) rotateX(5deg);
+              box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+              filter: blur(3px); /* Efecto de desenfoque */
+            }
+            
+            /* Estilos para el texto de indicación */
+            a.image-container .indication {
+              position: absolute;
+              bottom: 30px;
+              left: 50%;
+              transform: translateX(-50%);
+              background-color: rgba(255, 255, 255, 0.8);
+              padding: 5px 10px;
+              border-radius: 5px;
+              font-size: 14px;
+              color: #333;
+              opacity: 0;
+              transition: opacity 0.3s ease;
+            }
+            
+            a.image-container:hover .indication {
+              opacity: 1;
+            }
+            
+            /* Estilos para la flecha */
+            .arrow {
+              position: absolute;
+              bottom: 10px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            </style>
+            
+            
+            
+            <!-- Enlace a la imagen con animación -->
+            <a href="https://andinaformaciones.github.io/instituto/?fbclid=IwAR3mAXtvX4R9Ti8i7RENkaaVdedY8C3krtJExIbu0ggzJtahgCgk0NEB8nY_aem_Acu2HfMkGVtjJQSShZP78VUitenOJD-V3S92TpkDU_6Y3z4rMX_j4lbQWViIMuCY3zeVVxeCY0cJgmjTDIzfF5gc" class="image-container">
+                <!-- Imagen -->
+                <img src="https://i.ibb.co/F5xzLfT/Andina-Formaciones.png" alt="Descripción de la imagen" width="300">
+                <!-- Flecha indicativa -->
+             
+                <!-- Indicación -->
+                <span class="indication">Haz clic en la imagen para visitar la web</span>
+            </a>
+            
+            
+            
+            
+            
+            <p>(Haz clic en la imagen para visitar la web)</p>
+            
+            <p>INSTITUCIÓN ACADEMICA Encargada de la Formacion de Isabel Cristina Luján Mendoza</p> 
+            
+
+            <p>Asociación de Formación Holística Andina®</p>
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+    </div>
+
+    <script>
+        window.onload = () => {
+            document.body.classList.add('loaded');
+        };
+    </script>
+
+
+
+</body></html>
